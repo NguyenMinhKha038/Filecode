@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header" style="width: 100%;background-color: black;height: 60px;">
+
+        <img src="src/hkt.png" style="height: 100%; width: 150px;float: left;padding: 8px;">
+        <ul class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="product.html">Sản Phẩm</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Tài Khoản</a></li>
+        </ul>
+
+        <div class="box" style="padding: 20px;">
+            <div class="container-1">
+                <button style="background-color: #00b300;"><span class="icon" style="color: white;"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i></span></button>
+                <input type="search" id="search" placeholder="Nhập từ khóa tìm kiếm..." />
+                <button style="background-color: #00b300;"><span class="icon" style="color: white;"><i
+                            class="fa fa-search">Tìm
+                            Kiếm</i></span></button>
+            </div>
+        </div>
+    </div>
+    <div id="body" style="width: 90%;height: auto;">
+        <div style="width: 90%;height: 300px;margin-left: 5%;margin-right: 5%; ">
+            <!-- Slideshow container -->
+            <div class="slideshow-container" style="width: 100%;height: 300px; ">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="src/1.png" style="width:100%;height: 300px;">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="src/3.png" style="width:100%;height: 300px;">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="src/2.png" style="width:100%;height: 300px;">
+
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+
+
+        </div>
+        <div style="width: 90%;margin-left: 5%;margin-right: 5%; border-bottom: 1px solid black;">
+            <h3> Điện Thoại iPhone X 256GB</h3>
+        </div>
+        <div style="display: flex;">
+            <div style="width: 30%;height: 400px;margin-left: 5%">
+                <img style="width: 100%;" src="src/iphone.jpg">
+            </div>
+            <div>
+                <h2 id="gia" style="color: red;">32.390.000đ</h2> <br>
+                <b>Thông số kỹ thuật</b>
+                <table id="product">
+                    <tr>
+                        <td>
+                            Màn hình:
+                        </td>
+                        <td>
+                            OLED 6.5",Supper Retina XDR
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hệ điều hành:
+                        </td>
+                        <td>
+                            IOS 13
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Camera sau:</td>
+                        <td>3 camera 12 MP</td>
+                    </tr>
+                    <tr>
+                        <td>Camera trước:</td>
+                        <td>12 MP</td>
+                    </tr>
+                    <tr>
+                        <td>CPU:</td>
+                        <td>Apple A13 Bionic 6 nhân</td>
+                    </tr>
+                    <tr>
+                        <td>Ram:</td>
+                        <td>4GB</td>
+                    </tr>
+                    <tr>
+                        <td>Bộ nhớ trong:</td>
+                        <td>64/ 128 /256 GB</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="buy" style="width: 20%;margin-top: 95px;margin-left: 50px;">
+                <div id="info">
+                    <p>Bộ sản phẩm gồm:Sạc,Tai Nghe,Hộp,Cáp,Sách Hướng Dẫn,Cây Lấy Sim</p>
+                    <p>Bảo hành chính hãng 12 tháng</p>
+                    <p>Lỗi là được đổi mới nhe!!!</p>
+                </div> <br>
+                Nhập số lượng:<input type="number" id="SL" max="8" min="1" value="1">
+
+                <button onclick="thanhtoan()" style="background-color:  #00cc00; color: white; margin-top: 20px;">Mua
+                    Ngay <br> Giao Tận
+                    Nơi/Nhận Tại Siêu
+                    Thị</button> <br>
+                <button style="background-color: #0066ff; color: white;">Mua Trả Góp 0% <br>Thủ Tục Đơn Giãn</button>
+                <br>
+                <button style="background-color: #0066ff; color: white;">Trả Góp 0% Qua Thẻ <br> Visa/Master
+                    Card/JCB</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"
+        style="clear: both; margin-top: 200px; height: 250px;background-image: url(src/kanagawa.jpg);">
+        <div class="footer__logo-box" style="clear: both" ;>
+            <p class="heading-secondary footer__title"
+                style="text-align: center; font-weight: bold;font-size: 20px;font-family:'Times New Roman',Times,serif;">
+                Bạn Muốn Đi,Chúng Tôi Đi Cùng Bạn
+            </p>
+            <p class="footer__copyright" style="text-align: center; margin-bottom: 50px;">
+                Products &copy; of Nguyễn Minh Kha <br> Email:Nguyenminhkha038@gmail.com. <br> Phạm Trần Duy Linh <br>
+                Email:Duylinh0308@gmail.com <br>自分の生きる人生を愛せ。自分の愛する人生を生きろ。
+            </p>
+        </div>
+
+    </footer>
+    <script src="js/product.js"></script>
+</body>
+
+</html>
